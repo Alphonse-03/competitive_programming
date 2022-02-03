@@ -32,8 +32,13 @@ namespace {
 
 void solve()
 {
-    ll n;
-    //cin>>n;
+    vector<ll> arr(3);
+    rep(i,0,3)
+    {
+        cin>>arr[i];
+    }
+    sort(all(arr));
+    cout<<arr[1]-arr[0]+arr[2]-arr[1]<<endl;
     
         
     
@@ -47,9 +52,9 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int times;
-    cin>>times;
-    while(times--)
+    // int times;
+    // cin>>times;
+    // while(times--)
     {
         solve();
     }

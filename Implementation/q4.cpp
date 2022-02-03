@@ -32,8 +32,12 @@ namespace {
 
 void solve()
 {
-    ll n;
-    //cin>>n;
+    ll n,k,l,c,d,p,nl,np;
+    cin>>n>>k>>l>>c>>d>>p>>nl>>np;
+    ll a=k*l/nl;
+    ll b=p/np;
+    ll x=c*d;
+    cout<<min({a,b,x})/n<<endl;
     
         
     
@@ -47,9 +51,9 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int times;
-    cin>>times;
-    while(times--)
+    // int times;
+    // cin>>times;
+    // while(times--)
     {
         solve();
     }

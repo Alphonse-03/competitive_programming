@@ -32,8 +32,38 @@ namespace {
 
 void solve()
 {
-    ll n;
-    //cin>>n;
+    int arr[5][5];
+    int i;
+    int x,y;
+    rep(i,0,5)
+    {
+        int j;
+        rep(j,0,5)
+        {
+            cin>>arr[i][j];
+            if(arr[i][j]==1)
+            {
+                x=i;
+                y=j;
+            }
+        }
+    }
+   
+    // if(x==2||y==2)
+    // {
+    //     if(x==2)
+    //     {
+    //         cout<<abs(y-2);
+    //     }
+    //     else
+    //     {
+    //         cout<<abs(x-2);
+    //     }
+    // }
+    // else
+    // {
+        cout<<abs(x-2)+abs(y-2);
+    //}
     
         
     
@@ -47,12 +77,12 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    int times;
-    cin>>times;
-    while(times--)
-    {
+   // int times;
+    // cin>>times;
+    // while(times--)
+    // {
         solve();
-    }
+    //}
         
     return 0;
         
